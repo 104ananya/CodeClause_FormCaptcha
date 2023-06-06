@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+body {
+    background-color: #FBFBFB;
+    position: relative;
+    width: 1440px;
+    /* height: 1488px; */
+}
+
+.logo {
+    /* Logo Here */
+
+
+    position: absolute;
+    width: 121px;
+    height: 29px;
+    left: 100px;
+    top: 41px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+
+
+    color: #F6AF03;
+}
+
+.nav {
+    position: absolute;
+    width: 681px;
+    height: 31.54px;
+    left: 659px;
+    top: 40px;
+
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.nav span {
+    /* position: absolute;
+    width: 44px;
+    height: 19.33px;
+    left: 659px;
+    top: 46px; */
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #1F1F1F;
+
+
+}
+
+.circle {
+    opacity: 0.75;
+    /* border: 1px solid #011C2B; */
+    border-radius: 50%;
+    width: 31px;
+    height: 31px;
+}
+
+.title {
+    position: absolute;
+    width: 462px;
+    height: 87px;
+    left: 489px;
+    top: 145px;
+
+}
+
+.heading {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    /* identical to box height */
+
+    /* margin-bottom: 10px; */
+    text-align: center;
+
+    color: #F7AF03;
+}
+
+.msg {
+    /* font-family: 'Poppins'; */
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #717171;
+
+}
+
+.main {
+    position: absolute;
+    width: 1196px;
+    height: 667px;
+    left: 122px;
+    top: 292px;
+}
+
+.card {
+    position: absolute;
+    width: 491px;
+    height: 647px;
+    left: 10px;
+    top: 10px;
+
+    background: #011C2B;
+    border-radius: 10px;
+}
+
+
+
+.card-header .ch1 {
+
+    position: absolute;
+    width: 291px;
+    height: 42px;
+    left: 40px;
+    top: 40px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+}
+
+.ch2 {
+    position: absolute;
+    width: 307px;
+    height: 27px;
+    left: 40px;
+    top: 88px;
+
+    /* font-family: 'Poppins'; */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+
+
+    color: #C9C9C9;
+}
