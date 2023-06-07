@@ -10,35 +10,39 @@
         <link rel="stylesheet" href="style.css">
 
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+
+
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
     </head>
 
     <body>
 
-        <span class="logo">Logo <span style="color: black;">Here</span> </span>
+        <span class="logo">Hi ! <span style="color: black;">There</span> </span>
 
         <div class="nav">
 
-            <span>Home</span>
-            <span>Feature</span>
-            <span>Blog</span>
-            <span>About</span>
-            <span>Contact</span>
-            <span class="circle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="user">
-                    <path fill="#1F1F1F"
-                        d="M15.71,12.71a6,6,0,1,0-7.42,0,10,10,0,0,0-6.22,8.18,1,1,0,0,0,2,.22,8,8,0,0,1,15.9,0,1,1,0,0,0,1,.89h.11a1,1,0,0,0,.88-1.1A10,10,0,0,0,15.71,12.71ZM12,12a4,4,0,1,1,4-4A4,4,0,0,1,12,12Z">
-                    </path>
-                </svg></span>
-            <span class="circle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="shopping-cart-alt">
-                    <path fill="#1F1F1F"
-                        d="M21.5,15a3,3,0,0,0-1.9-2.78l1.87-7a1,1,0,0,0-.18-.87A1,1,0,0,0,20.5,4H6.8L6.47,2.74A1,1,0,0,0,5.5,2h-2V4H4.73l2.48,9.26a1,1,0,0,0,1,.74H18.5a1,1,0,0,1,0,2H5.5a1,1,0,0,0,0,2H6.68a3,3,0,1,0,5.64,0h2.36a3,3,0,1,0,5.82,1,2.94,2.94,0,0,0-.4-1.47A3,3,0,0,0,21.5,15Zm-3.91-3H9L7.34,6H19.2ZM9.5,20a1,1,0,1,1,1-1A1,1,0,0,1,9.5,20Zm8,0a1,1,0,1,1,1-1A1,1,0,0,1,17.5,20Z">
-                    </path>
-                </svg></span>
+            <span> <a href="https://kumari-ananya.netlify.app/" target="_blank">Website</a> </span>
+            <span> <a href="https://whimsical.com/featured-projects-PPoeaA6ojuTP4HgTpHeN6g@7YNFXnKbYiH8qGN5qiB2P"
+                    target="_blank">Featured</a> </span>
+            <span><a href="https://technoscape847364047.wordpress.com/" target="_blank">Blog</a></span>
+            <span><a href="https://kumari-ananya.netlify.app/" target="_blank">About</a></span>
+            <span><a href="/">Contact</a></span>
+            <span class="circle"> <a href="https://www.linkedin.com/in/104ananya" target="_blank">
+                    <img src="user.svg" alt="user">
+                </a>
+            </span>
+            <span class="circle"><a href="https://github.com/104ananya" target="_blank">
+                    <img src="github.svg" alt="github">
+                </a>
+            </span>
 
         </div>
 
         <div class="title">
-            <p class="heading">Contact Us</p>
-            <p class="msg">Any question or remarks? Just write us a message!</p>
+            <p class="heading">Contact Me</p>
+            <p class="msg">Any question or remarks? Drop us a message!</p>
         </div>
 
         <div class="main">
@@ -69,9 +73,12 @@
                 <div class="ellipse02"></div>
 
                 <div class="icon">
-                    <div class="symbol"><img src="twitter.svg" alt="" srcset=""></div>
-                    <div class="symbol"><img src="insta.svg" alt="" srcset=""></div>
-                    <div class="symbol"><img src="fb.svg" alt="" srcset=""></div>
+                    <div class="symbol"><a href="https://twitter.com/ANANYA1004" target="_blank"
+                            rel="noopener noreferrer"><img src="twitter.svg" alt="twitter" srcset=""></a></div>
+                    <div class="symbol"><a href="https://www.instagram.com/envizus_coredev/" target="_blank"
+                            rel="noopener noreferrer"><img src="insta.svg" alt="insta" srcset=""></a></div>
+                    <div class="symbol"><a href="https://www.linkedin.com/in/104ananya" target="_blank"
+                            rel="noopener noreferrer"><img src="fb.svg" alt="fb" srcset=""></a></div>
                 </div>
 
 
@@ -80,16 +87,51 @@
 
             <div class="form-sect">
 
+
+                <form method="POST" action="">
+                    <div class="one">
+                        <label for="first">First Name</label> <br>
+                        <input type="text" id="first">
+                    </div>
+
+                    <div class="two">
+                        <label for="last">Last Name</label> <br>
+                        <input type="text" id="last">
+                    </div>
+
+
+                    <div class="three">
+                        <label for="email">Email</label> <br>
+                        <input type="email" name="email" id="email">
+                    </div>
+
+                    <div class="four">
+                        <label for="phone">Phone Number</label> <br>
+                        <input type="text" pattern="[789][0-9]{9}" name="phone" id="phone">
+                    </div>
+
+                    <div class="five">
+                        <label for="message">Message</label> <br>
+                        <textarea name="message" id="message" cols="30" rows="3"
+                            placeholder="Write your message"></textarea>
+                    </div>
+
+                    <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
+
+
+                    <button type="button" onclick="sendEmail()">Send Message</button>
+                </form>
+
+
+
                 <div class="arrow"><img src="letter.png" alt="" srcset=""></div>
-
-
-
 
             </div>
         </div>
 
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
 
-
+        <script src="script.js"></script>
 
     </body>
 
