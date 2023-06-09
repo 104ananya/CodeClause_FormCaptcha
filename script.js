@@ -18,7 +18,7 @@ function sendEmail() {
     message;
 
   Email.send({
-    SecureToken: "fd821dd0-83ba-4975-bf67-baf19522c079",
+    SecureToken: "<paste security token that we just generated>",
     To: "contactananya21@gmail.com",
     From: "contactananya21@gmail.com",
     Subject: "Contact Form Query",
