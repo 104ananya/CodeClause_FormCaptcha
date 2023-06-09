@@ -41,24 +41,24 @@ if (isset($_POST['submit'])) {
         // If reCAPTCHA response is valid
         if ($responseData->success) {
 
-            // $subject = 'Contact Form Query';
-            // $htmlContent = "
-            // 		<h2>Contact Request Details</h2>
-            // 		<p><b>First Name: </b>" . $first . "</p>
-            //         <p><b>Last Name: </b>" . $last . "</p>
-            // 		<p><b>Email: </b>" . $email . "</p>
-            //         <p><b>Phone: </b>" . $phone . "</p>
-            // 		<p><b>Message: </b>" . $message . "</p>
-            // 	";
+            $subject = 'Contact Form Query';
+            $htmlContent = "
+            		<h2>Contact Request Details</h2>
+            		<p><b>First Name: </b>" . $first . "</p>
+                    <p><b>Last Name: </b>" . $last . "</p>
+            		<p><b>Email: </b>" . $email . "</p>
+                    <p><b>Phone: </b>" . $phone . "</p>
+            		<p><b>Message: </b>" . $message . "</p>
+            	";
 
-            // // Always set content-type when sending HTML email
-            // $headers = "MIME-Version: 1.0" . "\r\n";
-            // $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-            // // More headers
-            // $headers .= 'From:' . $fromName . ' <' . $fromEmail . '>' . "\r\n";
+            // Always set content-type when sending HTML email
+            $headers = "MIME-Version: 1.0" . "\r\n";
+            $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+            // More headers
+            $headers .= 'From:' . $fromName . ' <' . $fromEmail . '>' . "\r\n";
 
-            // // Send email
-            // mail($toEmail, $subject, $htmlContent, $headers);
+            // Send email
+            mail($toEmail, $subject, $htmlContent, $headers);
 
 
 
