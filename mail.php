@@ -1,7 +1,9 @@
 <?php
 // Google reCAPTCHA API key configuration
-$siteKey     = '6LeiiXgmAAAAAM4pp6AE8oBWGBcrqsnbM29mNt9Q';
-$secretKey     = '6LeiiXgmAAAAACx5H9vlN7euqMgEnCKpwqbG5unR';
+
+//Test CAptcha
+$siteKey     = '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI';
+$secretKey     = '6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe';
 
 
 
